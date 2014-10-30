@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<script>
+  <description>Google Chart</description>
+  <help>
+    <![CDATA[This script uses the Google Chart API to create a chart. The API is quite comprehensive and more help can be found at <a class="UnderlinedLink" href="http://code.google.com/apis/chart/">Google Chart API</a>.<br />You can also vist this site <a class="UnderlinedLink" href="http://www.jonwinstanley.com/charts/">Google Chart Generator</a> to interactively create a chart, then switch to FreeForm text mode and paste the chart img code.]]>
+  </help>
+  <items>
+    <item>
+      <content>
+        <![CDATA[
+<img src="http://chart.apis.google.com/chart?
+&chtt=[CHARTTITLE caption="Chart Title (chtt)" default="My Google Chart"]
+&amp;&chs=[WIDTH caption="Width (px)" default="300" columns="10"]x[HEIGHT caption="Height (px)" default="150" columns="10"]
+&amp;chd=t:[CHARTDATA caption="Chart Data (chd)" default="10,20,40,80,30|40,55,89,98,22"]
+&amp;chds=[CHARTDATASCALING caption="Chart Data Scaling (chds)" default="1,100"]
+&amp;cht=[CHARTTYPE caption="Chart Type (cht)" default="bvg"]
+&amp;chdl=[CHARTLEGEND caption="Chart Legend (chdl)" default="Series 1|Series 2"]
+&amp;chco=[CHARTCOLORS caption="Chart Colors (chco)" default="ff0000,00ff00"]
+&amp;chxt=[AXISTYPE caption="Axis Type (chxt)" default="x,y"]
+&amp;chxl=[AXISLABEL caption="Axis Labels (chxl)" default="0:|2004|2005|2006|2007|2008|1:1,100"]
+[IFNOTPIECHARTLABEL value=""]&amp;chl=[PIECHARTLABEL caption="Pie Chart Label (chl)" default=""][/IFNOTPIECHARTLABEL]
+" />
+]]>
+      </content>
+    </item>
+  </items>
+</script>

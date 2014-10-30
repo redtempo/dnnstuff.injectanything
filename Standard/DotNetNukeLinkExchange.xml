@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<script>
+  <description>DotNetNuke Link Exchange</description>
+  <help>
+    <![CDATA[To use this script, you will need to first go to the <a class="UnderlinedLink" href="http://www.dotnetnuke.com/Programs/LinkExchange/tabid/1071/Default.aspx">DotNetNuke Link Exchange Page</a>, login and submit a link. You will then be given a script to insert into your site that includes a numeric linkid. Just enter that link id into the area below.]]>
+  </help>
+  <items>
+    <item>
+      <content>
+        <![CDATA[
+<p>
+  <a href="http://www.dotnetnuke.com/DesktopModules/LinkExchange/Reciprocate.aspx?linkid=[LINKID Caption="DotNetNuke Link ID" Help="Enter the link id assigned to you by DotNetNuke"]">
+    <img border="0" src="http://www.dotnetnuke.com/DesktopModules/LinkExchange/logo.gif" alt="DotNetNuke Powered!" />
+  </a>
+</p>
+]]>
+      </content>
+    </item>
+  </items>
+</script>
+
+

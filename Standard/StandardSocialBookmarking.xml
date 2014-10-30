@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<script>
+  <description>Standard Social Bookmarking</description>
+  <help>
+    <![CDATA[This script is a home spun script that simply shows some of the major social bookmarking icons so users can bookmark your page.]]>
+  </help>
+  <items>
+    <item>
+      <content>
+        <![CDATA[
+<a href="http://del.icio.us/post?url=[tab:fullurl]&title=[tab:title]">
+<img src="[STANDARDFOLDER]/socialbookmarking/delicious.gif" border="0">&nbsp;Del.icio.us</a>
+<a href="http://digg.com/submit?phase=2&URL=[tab:fullurl]">
+<img src="[STANDARDFOLDER]/socialbookmarking/digg.gif" border="0">&nbsp;Digg</a>
+<a href="http://technorati.com/cosmos/search.html?url=[tab:fullurl]">
+<img src="[STANDARDFOLDER]/socialbookmarking/technorati.gif" border="0">&nbsp;Technorati</a>
+<a href="http://blinklist.com/index.php?Action=Blink/addblink.php&URL=[tab:fullurl]&Title=[tab:title]" >
+<img src="[STANDARDFOLDER]/socialbookmarking/blinklist.gif" border="0">&nbsp;Blinklist</a>
+<a href="http://furl.net/storeIt.jsp?t=[tab:title]&u=[tab:fullurl]">
+<img src="[STANDARDFOLDER]/socialbookmarking/furl.gif" border="0">&nbsp;Furl</a>
+<a href="http://reddit.com/submit?url=[tab:fullurl]&title=[tab:title]" >
+<img src="[STANDARDFOLDER]/socialbookmarking/reddit.gif" border="0">&nbsp;reddit</a>
+]]>
+      </content>
+    </item>
+  </items>
+</script>

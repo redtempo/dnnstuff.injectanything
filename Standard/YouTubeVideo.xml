@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<script>
+  <description>You Tube Video</description>
+  <help>
+    <![CDATA[To use this script, find the video at <a class="UnderlinedLink" href="http://www.youtube.com">YouTube</a>. In the url you will see a v= parameter. Enter the id after the = sign in the field below.]]>
+  </help>
+  <items>
+    <item>
+      <content>
+        <![CDATA[
+<object width="[WIDTH caption="Width (px)" default="400"]" height="[HEIGHT caption="Height (px)" default="300"]">
+<param name="movie" value="http://www.youtube.com/v/[VIDEOID caption="Video Id" help="Enter the video id from the v= parameter"]&hl=en&fs=1"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<param name="wmode" value="trasparent"></param>
+<embed src="http://www.youtube.com/v/[VIDEOID]&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="[WIDTH]" height="[HEIGHT]" wmode="transparent"></embed></object>
+]]>
+      </content>
+    </item>
+  </items>
+</script>

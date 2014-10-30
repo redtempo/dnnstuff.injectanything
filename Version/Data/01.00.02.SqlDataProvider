@@ -1,0 +1,88 @@
+﻿if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection]') and OBJECTPROPERTY(id, N'IsUserTable') = 1)
+drop table {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection]
+GO
+
+CREATE TABLE {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection] (
+	[InjectionId] [int] IDENTITY(1,1) NOT NULL,
+	[ModuleId] [int] NOT NULL,
+	[FreeFormText] [text] NULL,
+
+ CONSTRAINT [PK_{objectQualifier}DNNStuff_InjectAnything_Injection] PRIMARY KEY CLUSTERED 
+(
+	[InjectionId] ASC
+)
+) 
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_GetInjection]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_GetInjection]
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_GetInjection]
+(
+@ModuleId int
+)
+AS
+BEGIN
+	SELECT * FROM {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection]
+	WHERE ModuleId = @ModuleId
+END
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_UpdateInjection]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_UpdateInjection]
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_UpdateInjection]
+(
+@InjectionId int,
+@ModuleId int,
+@FreeFormText text
+)
+AS
+
+BEGIN
+if exists(select InjectionId From {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection] WHERE ModuleId = @ModuleId)
+	-- update
+	BEGIN
+		UPDATE {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection] SET
+			ModuleId = @ModuleId,
+			FreeFormText = @FreeFormText
+		WHERE ModuleId = @ModuleId
+		
+		SELECT @InjectionId
+	END
+else
+	-- add
+	BEGIN
+		INSERT  INTO {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection]
+			 (ModuleId, FreeFormText)
+		 VALUES (@ModuleId, @FreeFormText)
+		-- grab new id
+		SELECT @@IDENTITY
+	END
+
+END
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_DeleteInjection]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_DeleteInjection]
+GO
+
+CREATE PROCEDURE {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_DeleteInjection]
+(
+@InjectionId int
+)
+AS
+BEGIN
+	DELETE FROM {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection]
+	WHERE InjectionId = @InjectionId
+END
+GO
+
+INSERT INTO {databaseOwner}[{objectQualifier}DNNStuff_InjectAnything_Injection]
+SELECT MS.ModuleId, SettingValue FROM {databaseOwner}[{objectQualifier}ModuleSettings] MS
+INNER JOIN {databaseOwner}[{objectQualifier}Modules] M ON M.ModuleId = MS.ModuleId
+INNER JOIN {databaseOwner}[{objectQualifier}ModuleDefinitions] MD ON M.ModuleDefId = MD.ModuleDefId
+WHERE MS.SettingName = 'Text' AND MD.FriendlyName = 'DNNStuff - InjectAnything'
+GO

@@ -1,0 +1,6 @@
+﻿DELETE {databaseOwner}{objectQualifier}ModuleSettings
+  FROM {databaseOwner}{objectQualifier}ModuleSettings MS INNER JOIN
+  {databaseOwner}{objectQualifier}DNNStuff_InjectAnything_Injection IA
+  ON MS.ModuleId = IA.ModuleId
+  where MS.SettingName LIKE 'Token_%:%'
+GO

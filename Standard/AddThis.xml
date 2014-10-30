@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<script>
+  <description>AddThis social bookmarking script</description>
+  <help>
+    <![CDATA[To use this script, you will need to first go to <a class="UnderlinedLink" href="http://www.addthis.com">www.addthis.com</a> and register for your free account. You will then be given an account id which should be entered in the property below.]]>
+  </help>
+  <items>
+    <item>
+      <content>
+        <![CDATA[
+  <!-- AddThis Button BEGIN -->
+  <script type="text/javascript">
+  addthis_pub  = '[AddThisPub Caption="Your AddThis Account Id" Help="The account id assigned to you at the addthis.com website"]';
+  addthis_brand = '[AddThisBrand Caption="Brand Name" Help="The brand name to display in the drop-down (top right)"]';
+  </script>
+  <a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[tab:fullurl]', '[tab:title]')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/button1-addthis.gif" width="125" height="16" border="0" alt="" /></a><script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+  <!-- AddThis Button END -->
+  ]]>
+      </content>
+    </item>
+  </items>
+</script>

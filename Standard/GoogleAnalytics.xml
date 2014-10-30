@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<script>
+  <description>Google Web Analytics</description>
+  <help>
+    <![CDATA[To use this script, you will need to first go to <a class="UnderlinedLink" href="http://www.google.com/analytics">http://www.google.com/analytics/</a> and register for your free account. You will then be given a web property id which should be entered in the property below.]]>
+  </help>
+  <items>
+    <item>
+      <content>
+        <![CDATA[
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("[WebPropertyId Caption="Google Web Property Id" Help="Enter the web property id assigned to your accounts. This is usually a number like UA-12345-6"]");
+pageTracker._trackPageview();
+</script>
+]]>
+      </content>
+    </item>
+  </items>
+</script>

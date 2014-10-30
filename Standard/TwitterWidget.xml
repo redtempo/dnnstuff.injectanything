@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<script>
+  <description>Twitter Widget</description>
+  <help>
+    <![CDATA[To use this script, merely enter the appropriate twitter account name in settings]]>
+  </help>
+  <items>
+    <item>
+      <content>
+        <![CDATA[
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>new TWTR.Widget({ version: 2, type: 'profile', rpp: 4, interval: 6000, width: [Width Caption="Width" Help="Width in pixels" Default="185"], height: [Height Caption="Height" Help="Height in pixels" Default="300"], theme: { shell: { background: '[ShellBackground Caption="Shell Background Color" Help="Background Color Hex Code" Default="#333333"]', color: '[ShellTextColor Caption="Shell Text Color" Default="#ffffff"]' }, tweets: { background: '[TweetBackgroundColor Caption="Tweet Background Color" Default="#000000"]', color: '[TweetTextColor Caption="Tweet Text Color" Default="#ffffff"]', links: '[TweetLinkColor Caption="Tweet Link Color" Default="#4aed05"]' } }, features: { scrollbar: false, loop: false, live: false, hashtags: true, timestamp: true, avatars: false, behavior: 'all' } }).render().setUser('[TwitterAccount Caption="Twitter Account" Help="Enter the twitter account name you want to display (ie. dnnstuff)" Default="dnnstuff"]').start();</script>
+  ]]>
+      </content>
+    </item>
+  </items>
+</script>

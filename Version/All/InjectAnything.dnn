@@ -1,0 +1,100 @@
+﻿<dotnetnuke type="Package" version="5.0">
+	<packages>
+		<package name="DNNStuff - InjectAnything" type="Module" version="">
+			<friendlyName>DNNStuff - InjectAnything</friendlyName>
+			<description>Allows you to inject css, javacsript, vbscript or html content from a variety of sources including the filesystem or directly entered text</description>
+			<owner>
+				<name>Richard Edwards</name>
+				<organization>DNNStuff</organization>
+				<url>
+					<![CDATA[Web: <a href="http://www.dnnstuff.com/" target="_blank">www.dnnstuff.com</a>, Twitter: <a href="http://www.twitter.com/dnnstuff" target="_blank">http://www.twitter.com/dnnstuff</a>, Facebook: <a href="https://www.facebook.com/pages/DNNStuff/206502112775818" target="_blank">http://www.facebook.com/dnnstuff</a><br /><i><strong>(All links open in a new window and won't interupt your install!)</strong></i>]]>
+				</url>
+				<email>
+					<![CDATA[<a href="mailto:support@dnnstuff.com">support@dnnstuff.com</a>]]>
+				</email>
+			</owner>
+			<license src="License.html" />
+			<releaseNotes src="Version_Current.html" />
+			<azureCompatible>true</azureCompatible>
+			<dependencies>
+				<dependency type="CoreVersion">05.02.03</dependency>
+			</dependencies>
+			<components>
+				<component type="Module">
+					<desktopModule>
+						<moduleName>DNNStuff - InjectAnything</moduleName>
+						<foldername>DNNStuff - InjectAnything</foldername>
+						<businessControllerClass>DNNStuff.InjectAnything.IPortableController, DNNStuff.InjectAnything</businessControllerClass>
+						<supportedFeatures>
+							<supportedFeature type="Portable" />
+							<supportedFeature type="Upgradeable" />
+						</supportedFeatures>
+						<moduleDefinitions>
+							<moduleDefinition>
+								<friendlyName>DNNStuff - InjectAnything</friendlyName>
+								<defaultCacheTime>0</defaultCacheTime>
+								<moduleControls>
+									<moduleControl>
+										<controlKey></controlKey>
+										<controlSrc>DesktopModules/DNNStuff - InjectAnything/InjectAnything.ascx</controlSrc>
+										<controlTitle>InjectAnything View</controlTitle>
+										<controlType>View</controlType>
+									</moduleControl>
+									<moduleControl>
+										<controlKey>Edit</controlKey>
+										<controlSrc>DesktopModules/DNNStuff - InjectAnything/Settings.ascx</controlSrc>
+										<controlTitle>InjectAnything Settings</controlTitle>
+										<controlType>Edit</controlType>
+									</moduleControl>
+									<moduleControl>
+									  <controlKey>UploadScript</controlKey>
+									  <controlTitle>Upload Script</controlTitle>
+									  <controlSrc>DesktopModules/DNNStuff - InjectAnything/UploadScript.ascx</controlSrc>
+									  <controlType>Edit</controlType>
+									</moduleControl>
+								</moduleControls>
+							</moduleDefinition>
+						</moduleDefinitions>
+					</desktopModule>
+				</component>
+				<component type="Assembly">
+					<assemblies>
+						<basePath>bin</basePath>
+						<assembly>
+							<name>DNNStuff.InjectAnything.dll</name>
+							<sourceFileName>DNNStuff.InjectAnything.dll</sourceFileName>
+						</assembly>
+						<assembly>
+							<name>DNNStuff.Utilities.dll</name>
+							<sourceFileName>DNNStuff.Utilities.dll</sourceFileName>
+						</assembly>
+					</assemblies>
+				</component>
+				<component type="ResourceFile">
+					<resourceFiles>
+						<basePath>DesktopModules\DNNStuff - InjectAnything</basePath>
+						<resourceFile>
+							<name>resources.zip</name>
+						</resourceFile>
+					</resourceFiles>
+				</component>
+				<component type="Script">
+					<scripts>
+						<basePath>DesktopModules\DNNStuff - InjectAnything</basePath>
+						<script type="Install">
+							<name>01.00.02.SqlDataProvider</name>
+							<version>01.00.02</version>
+						</script>
+            <script type="Install">
+              <name>01.03.03.SqlDataProvider</name>
+              <version>01.03.03</version>
+            </script>
+            <script type="UnInstall">
+							<name>Uninstall.SqlDataProvider</name>
+						</script>
+					</scripts>
+				</component>
+			</components>
+		</package>
+	</packages>
+</dotnetnuke>

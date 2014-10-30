@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0440098F-FF3B-41A4-A074-45B878F929B9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DNNStuff.InjectAnything</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Flow</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE32Nav30</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>On</OptionStrict>
+    <RootNamespace>
+    </RootNamespace>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <DocumentationFile>DNNStuff.InjectAnything.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DNNVERSION="DNN6"</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\bin\</OutputPath>
+    <DocumentationFile>DNNStuff.InjectAnything.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DNNVERSION="DNN6"</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Test|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>DNNStuff.InjectAnything.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>DNNVERSION="DNN6"</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|AnyCPU' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>DNNStuff.InjectAnything.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>DNNVERSION="DNN6"</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Trial|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\bin\</OutputPath>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>DNNStuff.InjectAnything.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>DNNVERSION="DNN6"</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetNuke">
+      <Name>DotNetNuke</Name>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN7' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke7\DotNetNuke.dll</HintPath>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN5' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke5\DotNetNuke.dll</HintPath>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN6' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke6\DotNetNuke.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SharpZipLib, Version=0.81.0.1407, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN7' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke7\SharpZipLib.dll</HintPath>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN5' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke5\SharpZipLib.dll</HintPath>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN6' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke6\SharpZipLib.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data">
+      <Name>Microsoft.ApplicationBlocks.Data</Name>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN7' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke7\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN5' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke5\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <HintPath Condition=" '$(DNNVERSION)' == 'DNN6' ">\\RICHARD-SERVER\Shared Files\Development\BIN\DotNetNuke6\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DNNStuff.Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\RICHARD-SERVER\Shared Files\Development\BIN\Various\DNNStuff.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.ComponentModel" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.HtmlControls" />
+    <Import Include="System.Web.UI.WebControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compatibility\DNN6\Compatibility.vb" />
+    <Compile Include="Components\Business\Common.vb" />
+    <Compile Include="Components\Business\InjectionController.vb" />
+    <Compile Include="Components\DataLevel\ClassesInfo.vb" />
+    <Compile Include="Components\DataLevel\DataProvider.vb" />
+    <Compile Include="Components\DataLevel\SqlDataProvider.vb" />
+    <Compile Include="Components\Helpers\DNNUtilities.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InjectAnything.ascx.designer.vb">
+      <DependentUpon>InjectAnything.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="InjectAnything.ascx.vb">
+      <DependentUpon>InjectAnything.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\DataLevel\ModuleSettings.vb" />
+    <Compile Include="Settings.ascx.designer.vb">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.ascx.vb">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Components\Business\StandardScript.vb" />
+    <Compile Include="Components\Business\IPortableController.vb" />
+    <Compile Include="UploadScript.ascx.designer.vb">
+      <DependentUpon>UploadScript.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UploadScript.ascx.vb">
+      <DependentUpon>UploadScript.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="\\RICHARD-SERVER\Shared Files\DNNStuff\SharedCode\StandardVariables.vb">
+      <Link>Components\Common\StandardVariables.vb</Link>
+    </Compile>
+    <Content Include="InjectAnything.ascx" />
+    <Content Include="Module.css" />
+    <Content Include="Resources\Support\alert.png" />
+    <Content Include="Resources\Support\close-icn.png" />
+    <Content Include="Resources\Support\down-icn.png" />
+    <Content Include="Resources\Support\edit.css" />
+    <Content Include="Resources\Support\edit_5.css" />
+    <Content Include="Resources\Support\error-icn.png" />
+    <Content Include="Resources\Support\errorbg.gif" />
+    <Content Include="Resources\Support\help-icn.png" />
+    <Content Include="Resources\Support\pixel.gif" />
+    <Content Include="Resources\Support\success-icn.png" />
+    <Content Include="Resources\Support\up-icn.png" />
+    <Content Include="Resources\Support\warning-icn.png" />
+    <Content Include="Resources\Support\yetii-min.js" />
+    <Content Include="Standard\AddThis.xml" />
+    <Content Include="Standard\Clicky.xml" />
+    <Content Include="Standard\TwitterWidget.xml" />
+    <Content Include="Standard\GoogleChart.xml" />
+    <Content Include="Standard\YouTubeVideo.xml" />
+    <Content Include="Standard\DotNetNukeLinkExchange.xml" />
+    <Content Include="Standard\GoogleAnalytics.xml" />
+    <Content Include="Standard\AllTokens.xml" />
+    <Content Include="Standard\StandardSocialBookmarking.xml" />
+    <Content Include="Settings.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Standard\SocialBookmarking\blinklist.gif" />
+    <Content Include="Standard\SocialBookmarking\delicious.gif" />
+    <Content Include="Standard\SocialBookmarking\digg.gif" />
+    <Content Include="Standard\SocialBookmarking\furl.gif" />
+    <Content Include="Standard\SocialBookmarking\reddit.gif" />
+    <Content Include="Standard\SocialBookmarking\technorati.gif" />
+    <Content Include="UploadScript.ascx" />
+    <Content Include="Version\All\License.html" />
+    <Content Include="Version\Documentation\images\Configuration.png" />
+    <Content Include="Version\Documentation\images\ScriptFormat.png" />
+    <Content Include="Version\Documentation\images\ScriptStructure.png" />
+    <Content Include="Version\Documentation\images\UploadScript.png" />
+    <EmbeddedResource Include="App_LocalResources\InjectAnything.ascx.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="App_LocalResources\Settings.ascx.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="App_LocalResources\UploadScript.ascx.resx">
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="InjectAnything.ascx.resx">
+      <DependentUpon>InjectAnything.ascx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.ascx.resx">
+      <DependentUpon>Settings.ascx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UploadScript.ascx.resx">
+      <DependentUpon>UploadScript.ascx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Build\Build.bat" />
+    <None Include="Build\BuildFinal.bat" />
+    <None Include="Build\DeployFinal.bat" />
+    <None Include="Build\ModuleSpecific.targets">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Version\All\InjectAnything.dnn5">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Version\All\Version_Current.md" />
+    <None Include="Version\Data\01.00.02.SqlDataProvider" />
+    <None Include="Version\Data\01.03.03.SqlDataProvider" />
+    <None Include="Version\Data\Uninstall.SqlDataProvider" />
+    <None Include="Version\All\InjectAnything.dnn" />
+    <Content Include="Version\Documentation\Configuration.html.md" />
+    <Content Include="Version\Documentation\Index.html.md" />
+    <Content Include="Version\Documentation\Installation.html.md" />
+    <Content Include="Version\Documentation\Releases.html.md" />
+    <Content Include="Version\Documentation\StandardScript.html.md" />
+    <Content Include="Version\Documentation\Tokens.html.md" />
+    <Content Include="Version\Documentation\UploadScript.html.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1124</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://dev.dnn6/DesktopModules/DNNStuff - InjectAnything</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://dev.dnn6/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://dev.dnn6</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+</Project>

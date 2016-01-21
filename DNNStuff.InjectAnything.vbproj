@@ -44,13 +44,14 @@
     <SccProvider>
     </SccProvider>
     <OldToolsVersion>4.0</OldToolsVersion>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <TargetFrameworkProfile />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\dnn7.dev.com\bin\</OutputPath>
@@ -58,7 +59,8 @@
     <BaseAddress>285212672</BaseAddress>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <DebugSymbols>true</DebugSymbols>
@@ -76,7 +78,8 @@
     <BaseAddress>285212672</BaseAddress>
     <ConfigurationOverrideFile>
     </ConfigurationOverrideFile>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <DebugSymbols>false</DebugSymbols>
@@ -99,7 +102,8 @@
     <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
     <DebugType>full</DebugType>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>
+    </DefineConstants>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DotNetNuke">
@@ -166,9 +170,10 @@
     <Compile Include="AssemblyInfo.vb">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Compatibility\DNN8\Compatibility.vb" />
+    <Compile Include="Compatibility\DNN6\Compatibility.vb" />
     <Compile Include="Components\Business\Common.vb" />
     <Compile Include="Components\Business\InjectionController.vb" />
+    <Compile Include="Components\Business\StandardVariables.vb" />
     <Compile Include="Components\DataLevel\ClassesInfo.vb" />
     <Compile Include="Components\DataLevel\DataProvider.vb" />
     <Compile Include="Components\DataLevel\SqlDataProvider.vb" />
@@ -198,9 +203,6 @@
     <Compile Include="UploadScript.ascx.vb">
       <DependentUpon>UploadScript.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="\\RICHARD-SERVER\Shared Files\DNNStuff\SharedCode\StandardVariables.vb">
-      <Link>Components\Common\StandardVariables.vb</Link>
     </Compile>
     <Content Include="InjectAnything.ascx" />
     <Content Include="Module.css" />

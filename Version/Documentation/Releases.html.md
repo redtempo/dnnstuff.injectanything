@@ -1,5 +1,20 @@
 # Inject Anything Release History 
 
+```Minimum configuration DNN 7.1.2+ (.NET 4.0) / DNN 8+ (.NET 4.5)```
+
+<!-- insert-newversion -->
+
+## 01.05.00
+
+22/Jan/2016
+
+
+* Fixes
+	* Added support for DNN8
+    * Minimum configuration is now DNN 7.1.2+ (.NET 4.0) / DNN 8+ (.NET 4.5)
+
+
+
 ```Minimum configuration - DNN 6.0.3+ / DNN 7+ / .NET 3.5```
 
 ## 01.04.00

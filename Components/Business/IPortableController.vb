@@ -7,18 +7,11 @@
 '* Description: IPortable Support
 '*************/
 
-Imports System
-Imports System.Configuration
-Imports System.Data
-Imports System.XML
-Imports System.Web
-Imports System.Collections.Generic
-
+Imports System.Text
+Imports System.Xml
 Imports DotNetNuke
 Imports DotNetNuke.Common
-Imports DotNetNuke.Common.Utilities.XmlUtils
-Imports DotNetNuke.Common.Utilities
-Imports DotNetNuke.Services.Search
+
 
 Namespace DNNStuff.InjectAnything
 
@@ -47,7 +40,7 @@ Namespace DNNStuff.InjectAnything
         ''' </history>
         ''' -----------------------------------------------------------------------------
         Public Function ExportModule(ByVal ModuleID As Integer) As String Implements DotNetNuke.Entities.Modules.IPortable.ExportModule
-            Dim strXML As New Text.StringBuilder()
+            Dim strXML As New StringBuilder()
             Dim xmlsettings As New XmlWriterSettings()
             xmlsettings.Indent = True
             xmlsettings.OmitXmlDeclaration = True

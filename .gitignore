@@ -1,0 +1,5 @@
+obj/
+Build/Logs
+Build/Output
+Build/Deploy
+Build/*.txt

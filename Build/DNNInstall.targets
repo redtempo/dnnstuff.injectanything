@@ -25,7 +25,6 @@
       <TempPath>output\$(DNNVersion)</TempPath>
       <InstallFile>$(Company).$(ProductName).$(Version).Install.$(Configuration).zip</InstallFile>
 		  <DeployFolder>deploy\$(Configuration)</DeployFolder>
-			<LogFolder>logs</LogFolder>
 	</PropertyGroup>
 
   <Target Name="Clean">
@@ -51,9 +50,6 @@
     <!-- Prepare folder to copy output -->
     <RemoveDir Directories="$(TempPath)" />
     <MakeDir Directories="$(TempPath)" />
-
-    <!-- Prepare local log folder -->
-    <MakeDir Directories="$(LogFolder)" />
 
     <!-- Prepare local deployment folder -->
     <MakeDir Directories="$(DeployFolder)" />

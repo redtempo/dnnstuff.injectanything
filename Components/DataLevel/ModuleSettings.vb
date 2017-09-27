@@ -1,13 +1,3 @@
-'***************************************************************************/
-'* ModuleSettings.vb
-'*
-'* Copyright (c) 2007 by DNNStuff.
-'* All rights reserved.
-'*
-'* Date:        March 19,2007
-'* Author:      Richard Edwards
-'* Description: Class to organize module settings
-'*************/
 Imports DotNetNuke
 Imports DNNStuff.Utilities.RegularExpression
 

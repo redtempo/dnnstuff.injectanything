@@ -1,13 +1,3 @@
-'* DataProvider.vb
-'*
-'* Copyright (c) 2007 by DNNStuff.
-'* All rights reserved.
-'*
-'* Date:        March 19,2007
-'* Author:      Richard Edwards
-'* Description: Data provider
-'*************/
-
 Imports System
 Imports DotNetNuke
 

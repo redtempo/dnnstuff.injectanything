@@ -1,14 +1,3 @@
-'***************************************************************************/
-'* InjectAnything.ascx.vb
-'*
-'* Copyright (c) 2007 by DNNStuff.
-'* All rights reserved.
-'*
-'* Date:        March 19,2007
-'* Author:      Richard Edwards
-'* Description: Portal Module for displaying InjectAnything
-'*************/
-
 Imports DotNetNuke
 Imports System.Text.RegularExpressions
 

@@ -52,6 +52,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>..\..\sites\dnn7.dnndev.me\bin\</OutputPath>
@@ -266,7 +267,6 @@
     </EmbeddedResource>
     <None Include="Build\Build.bat" />
     <None Include="Build\BuildFinal.bat" />
-    <None Include="Build\DeployFinal.bat" />
     <None Include="Build\ModuleSpecific.targets">
       <SubType>Designer</SubType>
     </None>

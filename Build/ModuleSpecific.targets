@@ -17,11 +17,7 @@
   <ItemGroup>
     <MyContentFiles Include="..\version\all\*.*" />
     <MyContentFiles Include="..\version\data\*.*" />
-    <MyContentFiles Include="J:\TOOLING\BIN\Various\DNNStuff.Utilities.dll" />
+    <MyContentFiles Include="..\refs\DNNStuff.Utilities.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <MySourceFiles Include="..\**\*.*" Exclude="..\**\obj\**;..\Build\**;..\**\.git\**;..\Skins\**\*_\**;..\*.suo;..\Packages;"/>
-  </ItemGroup>
-  <Import Project="J:\TOOLING\Tools\MsBuild\DNNInstall.targets" />
-  <Import Project="J:\TOOLING\Tools\MsBuild\DNNDeploy.targets" />
+  <Import Project="DNNInstall.targets" />
 </Project>

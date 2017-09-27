@@ -308,3 +308,4 @@ OpenCover/
 Build/Deploy/
 Build/Output/
 Build/Logs/
+Build/*.txt

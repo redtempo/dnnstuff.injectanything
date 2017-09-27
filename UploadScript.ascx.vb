@@ -183,11 +183,7 @@ Namespace DNNStuff.InjectAnything
 #End Region
 
         Private Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-            If DNNUtilities.SafeDNNVersion().Major = 5 Then
-                DNNUtilities.InjectCSS(Me.Page, ResolveUrl("Resources/Support/edit_5.css"))
-            Else
-                DNNUtilities.InjectCSS(Me.Page, ResolveUrl("Resources/Support/edit.css"))
-            End If
+            DNNUtilities.InjectCSS(Me.Page, ResolveUrl("Resources/Support/edit.css"))
 
         End Sub
     End Class

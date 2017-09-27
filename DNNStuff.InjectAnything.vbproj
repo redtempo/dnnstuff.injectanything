@@ -211,7 +211,6 @@
     <Content Include="Resources\Support\close-icn.png" />
     <Content Include="Resources\Support\down-icn.png" />
     <Content Include="Resources\Support\edit.css" />
-    <Content Include="Resources\Support\edit_5.css" />
     <Content Include="Resources\Support\error-icn.png" />
     <Content Include="Resources\Support\errorbg.gif" />
     <Content Include="Resources\Support\help-icn.png" />

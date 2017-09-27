@@ -42,11 +42,7 @@ Namespace DNNStuff.InjectAnything
         End Sub
 
         Private Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-            If DNNUtilities.SafeDNNVersion().Major = 5 Then
-                DNNUtilities.InjectCSS(Me.Page, ResolveUrl("Resources/Support/edit_5.css"))
-            Else
-                DNNUtilities.InjectCSS(Me.Page, ResolveUrl("Resources/Support/edit.css"))
-            End If
+            DNNUtilities.InjectCSS(Me.Page, ResolveUrl("Resources/Support/edit.css"))
             Page.ClientScript.RegisterClientScriptInclude(Me.GetType, "yeti", ResolveUrl("resources/support/yetii-min.js"))
 
             SetVisibilityBasedOnSource()

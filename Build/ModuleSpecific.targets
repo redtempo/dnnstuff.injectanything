@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Company>DNNStuff</Company>
+    <ProductName>InjectAnything</ProductName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectToBuild Include="..\$(Company).$(ProductName).vbproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <MyResourceFiles Include="..\module.css" />
+    <MyResourceFiles Include="..\*.ascx" />
+    <MyResourceFiles Include="..\App_LocalResources\*.resx" />
+    <MyResourceFiles Include="..\Resources\**\*.*" />
+    <MyResourceFiles Include="..\Standard\**\*.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <MyContentFiles Include="..\version\all\*.*" />
+    <MyContentFiles Include="..\version\data\*.*" />
+    <MyContentFiles Include="J:\TOOLING\BIN\Various\DNNStuff.Utilities.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <MySourceFiles Include="..\**\*.*" Exclude="..\**\obj\**;..\Build\**;..\**\.git\**;..\Skins\**\*_\**;..\*.suo;..\Packages;"/>
+  </ItemGroup>
+  <Import Project="J:\TOOLING\Tools\MsBuild\DNNInstall.targets" />
+  <Import Project="J:\TOOLING\Tools\MsBuild\DNNDeploy.targets" />
+</Project>

@@ -33,9 +33,6 @@ Namespace DNNStuff.InjectAnything
             InitializeComponent()
 
             Try
-#If CONFIG = "Trial" Then
-                Common.AddTrialNotice(Me)
-#End If
                 ' process file or text
                 Process()
 

@@ -1,25 +1,25 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DNNStuff.InjectAnything", "DNNStuff.InjectAnything.vbproj", "{0440098F-FF3B-41A4-A074-45B878F929B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-		Trial|Any CPU = Trial|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{0440098F-FF3B-41A4-A074-45B878F929B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0440098F-FF3B-41A4-A074-45B878F929B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0440098F-FF3B-41A4-A074-45B878F929B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0440098F-FF3B-41A4-A074-45B878F929B9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0440098F-FF3B-41A4-A074-45B878F929B9}.Trial|Any CPU.ActiveCfg = Trial|Any CPU
-		{0440098F-FF3B-41A4-A074-45B878F929B9}.Trial|Any CPU.Build.0 = Trial|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {2DCBA2B3-D26F-4340-B93B-CB3034FD4975}
 	EndGlobalSection
 EndGlobal

@@ -6,18 +6,18 @@ The Inject Anything module is a DNN Module that allows you to inject markup incl
 
 ## Release History
 
-* [View the Release History](Releases)
+* [View the Release History](releases)
 
 ## General Topics
 
-* [Installation](Installation)
-* [Configuration](Configuration)
-* [Upload Script](UploadScript)
+* [Installation](installation)
+* [Configuration](configuration)
+* [Upload Script](uploadscript)
 
 ## Advanced Topics
 
-* [Tokens](Tokens)
-* [Standard Scripts](StandardScript)
+* [Tokens](tokens)
+* [Standard Scripts](standardscript)
 
 
 

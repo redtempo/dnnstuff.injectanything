@@ -2,6 +2,13 @@
 
 ```Minimum configuration DNN 7.2.0+ (.NET 4.0) / DNN 8+ (.NET 4.5)```
 
+## 01.05.01
+
+9/28/2017
+
+* Fixes
+    * Reconfigured project for open source distribution
+    
 ## 01.05.00
 
 22/Jan/2016

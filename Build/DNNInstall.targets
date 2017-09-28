@@ -23,7 +23,7 @@
       <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
       <Version Condition=" '$(Version)' == '' ">01.00.00</Version>
       <TempPath>output\$(DNNVersion)</TempPath>
-      <InstallFile>$(Company).$(ProductName).$(Version).Install.$(Configuration).zip</InstallFile>
+      <InstallFile>$(Company).$(ProductName).$(Version).Install.zip</InstallFile>
 		  <DeployFolder>deploy\$(Configuration)</DeployFolder>
 	</PropertyGroup>
 

@@ -201,6 +201,7 @@
       <DependentUpon>UploadScript.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Content Include=".gitignore" />
     <Content Include="InjectAnything.ascx" />
     <Content Include="Module.css" />
     <Content Include="Resources\Support\alert.png" />
@@ -235,6 +236,7 @@
     <Content Include="Standard\SocialBookmarking\technorati.gif" />
     <Content Include="UploadScript.ascx" />
     <Content Include="Version\All\License.html" />
+    <Content Include="Version\All\Release.html" />
     <Content Include="Version\Documentation\images\Configuration.png" />
     <Content Include="Version\Documentation\images\ScriptFormat.png" />
     <Content Include="Version\Documentation\images\ScriptStructure.png" />
@@ -264,11 +266,9 @@
     <None Include="Build\ModuleSpecific.targets">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="LICENSE" />
     <None Include="packages.config" />
-    <None Include="Version\All\InjectAnything.dnn5">
-      <SubType>Designer</SubType>
-    </None>
-    <Content Include="Version\All\Version_Current.md" />
+    <Content Include="README.md" />
     <None Include="Version\Data\01.00.02.SqlDataProvider" />
     <None Include="Version\Data\01.03.03.SqlDataProvider" />
     <None Include="Version\Data\Uninstall.SqlDataProvider" />

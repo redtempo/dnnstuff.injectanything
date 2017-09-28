@@ -1,8 +1,6 @@
 
 # Inject Anything Standard Script 
 
-
-
 ### What are Standard Scripts?
 
 These are scripts that are included Out of the Box (OOTB) with the

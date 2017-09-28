@@ -1,10 +1,4 @@
-```
-title: Inject Anything
-layout: page
-tags: ['intro','page']
-topNav: true
-topNavOrder: 3
-```
+# Inject Anything Documentation
 
 ## About
 
@@ -25,8 +19,5 @@ The Inject Anything module is a DNN Module that allows you to inject markup incl
 * [Tokens](Tokens)
 * [Standard Scripts](StandardScript)
 
-## Other
 
--   [Inject Anything Page](http://www.dnnstuff.com/Modules/InjectAnything/tabid/309/Default.aspx?utm_source=dnnstuff&utm_medium=wiki&utm_campaign=injectanything)
--   [Purchase InjectAnything](http://www.dnnstuff.com/store.aspx?utm_source=dnnstuff&utm_medium=wiki&utm_campaign=injectanything)
 

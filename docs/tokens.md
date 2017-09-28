@@ -1,8 +1,6 @@
 
 # Inject Anything Tokens 
 
-
-
 What are tokens?
 ----------------
 

@@ -1,7 +1,5 @@
 
-# Inject Anything Installation 
-
-
+# Inject Anything Installation
 
 Inject Anything is installed using the same method that all other
 standard DNN modules use.

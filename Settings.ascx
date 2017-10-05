@@ -6,8 +6,6 @@
         <ul id="editsettings-nav" class="tabslayout">
             <li><a href="#tab1"><span>
                 <%=Localization.GetString("TabCaption_Tab1", LocalResourceFile)%></span></a></li>
-            <li><a href="#help"><span>
-                <%=Localization.GetString("TabCaption_Help", LocalResourceFile)%></span></a></li>
         </ul>
         <div class="tabs-container">
             <div class="tab" id="tab1">
@@ -69,9 +67,6 @@
                     <dnn:Label ID="lblDebug" runat="server" ControlName="chkDebug" Suffix=":" />
 					<asp:CheckBox runat="server" ID="chkDebug" />
                 </div>
-            </div>
-            <div class="tab" id="help">
-                <div><%=Localization.GetString("DocumentationHelp.Text", LocalResourceFile)%></div>
             </div>
         </div>
     </div>

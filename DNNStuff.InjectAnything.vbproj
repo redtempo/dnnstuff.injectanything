@@ -186,6 +186,10 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Content Include=".gitignore" />
+    <Content Include="docs\images\Configuration.png" />
+    <Content Include="docs\images\ScriptFormat.png" />
+    <Content Include="docs\images\ScriptStructure.png" />
+    <Content Include="docs\images\UploadScript.png" />
     <Content Include="InjectAnything.ascx" />
     <Content Include="Module.css" />
     <Content Include="Resources\Support\alert.png" />
@@ -221,10 +225,6 @@
     <Content Include="UploadScript.ascx" />
     <Content Include="Version\All\License.html" />
     <Content Include="Version\All\Release.html" />
-    <Content Include="Version\Documentation\images\Configuration.png" />
-    <Content Include="Version\Documentation\images\ScriptFormat.png" />
-    <Content Include="Version\Documentation\images\ScriptStructure.png" />
-    <Content Include="Version\Documentation\images\UploadScript.png" />
     <EmbeddedResource Include="App_LocalResources\InjectAnything.ascx.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -251,19 +251,19 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="LICENSE" />
+    <Content Include="docs\configuration.md" />
+    <Content Include="docs\index.md" />
+    <Content Include="docs\installation.md" />
+    <Content Include="docs\releases.md" />
+    <Content Include="docs\standardscript.md" />
+    <Content Include="docs\tokens.md" />
+    <Content Include="docs\uploadscript.md" />
     <None Include="packages.config" />
     <Content Include="README.md" />
     <None Include="Version\Data\01.00.02.SqlDataProvider" />
     <None Include="Version\Data\01.03.03.SqlDataProvider" />
     <None Include="Version\Data\Uninstall.SqlDataProvider" />
     <None Include="Version\All\InjectAnything.dnn" />
-    <Content Include="Version\Documentation\Configuration.html.md" />
-    <Content Include="Version\Documentation\Index.html.md" />
-    <Content Include="Version\Documentation\Installation.html.md" />
-    <Content Include="Version\Documentation\Releases.html.md" />
-    <Content Include="Version\Documentation\StandardScript.html.md" />
-    <Content Include="Version\Documentation\Tokens.html.md" />
-    <Content Include="Version\Documentation\UploadScript.html.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="My Project\" />
@@ -284,16 +284,6 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1124</DevelopmentServerPort>
-          <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://dnn7.dnndev.me/DesktopModules/DNNStuff - InjectAnything</IISUrl>
-          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
-          <IISAppRootUrl>http://dnn7.dnndev.me</IISAppRootUrl>
-          <NTLMAuthentication>False</NTLMAuthentication>
-          <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>http://dnn7.dnndev.me</CustomServerUrl>
           <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

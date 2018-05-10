@@ -2,6 +2,13 @@
 
 ```Minimum configuration DNN 7.2.0+ (.NET 4.0) / DNN 8+ (.NET 4.5)```
 
+## 01.05.02
+
+5/10/2018
+
+* Fixes
+    * Fixed GetUserRoles deprecated call for compatibility with DNN 9.2
+
 ## 01.05.01
 
 9/28/2017

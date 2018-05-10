@@ -18,6 +18,6 @@ Option Explicit On
  Assembly: System.Reflection.AssemblyCopyright("Copyright (c) DNNStuff 2017"),  _
  Assembly: System.Runtime.InteropServices.ComVisible(false),  _
  Assembly: System.CLSCompliant(true),  _
- Assembly: System.Reflection.AssemblyVersion("01.05.01"),  _
- Assembly: System.Reflection.AssemblyFileVersion("01.05.01")> 
+ Assembly: System.Reflection.AssemblyVersion("01.05.02"),  _
+ Assembly: System.Reflection.AssemblyFileVersion("01.05.02")> 
 

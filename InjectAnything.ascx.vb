@@ -165,10 +165,12 @@ Namespace DNNStuff.InjectAnything
                     End If
             End Select
         End Sub
+
         Private Function UserRoles() As String
             Dim roleController As New Security.Roles.RoleController
-            Return String.Join(",", roleController.GetRolesByUser(UserId, PortalId))
+            Return String.Join(",", UserInfo.Roles)
         End Function
+
         Private Function UserRolesArray() As String
             Return "'" & UserRoles.Replace(",", "','") & "'"
         End Function

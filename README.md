@@ -4,7 +4,7 @@ A DNN module that allows you to inject javascript/vbscript/css into your page
 
 ## Donate
 
-Opensource at Red Tempo is done with spare time, nights and weekends. [Please consider donating](https://paypal.me/redwards1966) to help add new features and fix bugs for newer DNN builds
+Opensource at Red Tempo is done with spare time, nights and weekends. [Please consider donating](https://paypal.me/redwards1966/25) to help add new features and fix bugs for newer DNN builds
 
 ## Minimum DNN Version
 
